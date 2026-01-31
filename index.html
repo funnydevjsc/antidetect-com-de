@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TF3PS4Z6');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Auto Language Redirect -->
+    <script>
+    (function() {
+        if (sessionStorage.getItem('langRedirected')) return;
+        var lang = navigator.language || navigator.userLanguage;
+        var langMap = {
+            'vi': 'https://antidetect.vn',
+            'en-US': 'https://antidetect.us',
+            'en-NZ': 'https://antidetect.nz',
+            'en-AU': 'https://antidetect.nz',
+            'nl': 'https://antidetect.nl',
+            'de': 'https://antidetect.gmbh'
+        };
+        var currentDomain = 'https://antidetect.gmbh';
+        var targetUrl = langMap[lang] || langMap[lang.split('-')[0]];
+        if (targetUrl && targetUrl !== currentDomain) {
+            sessionStorage.setItem('langRedirected', '1');
+            window.location.href = targetUrl;
+        }
+    })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antidetect Cloud">
+    <title>Antidetect Cloud - Professionelle Software für digitale Identität</title>
+    <meta name="description" content="Verwalten Sie mehrere Konten sicher mit Antidetect Cloud. Browser-Fingerprinting, Gerätespoofing und Cloud-Synchronisation für Ihr Online-Geschäft.">
+    <meta name="keywords" content="antidetect browser, browser fingerprinting, multi-accounting, anonymes surfen, hardware spoofing, digitale identität, datenschutz tools, affiliate marketing, deutschland">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="Antidetect Cloud - Professionelle Software für digitale Identität">
+    <meta property="og:description" content="Verwalten Sie mehrere Konten sicher mit fortschrittlichem Browser-Fingerprinting und Gerätespoofing. Die All-in-One-Lösung für digitales Identitätsmanagement.">
+    <meta property="og:image" content="assets/images/index/hero-image.webp">
+    <meta property="og:url" content="https://antidetect.gmbh">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vendors/alpinejs.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+        }
+        .accent-gradient {
+            background: linear-gradient(90deg, #3b82f6, #06b6d4);
+        }
+        .card-border {
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
+        .card-border:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
+        }
+        [x-cloak] { display: none !important; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF3PS4Z6"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-white border-b border-slate-200">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="https://antidetect.gmbh" class="flex items-center space-x-3">
+                <img src="assets/images/logo/logo.png" alt="Antidetect Cloud" class="h-9 w-9">
+                <div>
+                    <span class="text-xl font-bold text-slate-900">Antidetect</span>
+                    <span class="text-xl font-bold text-blue-600">Cloud</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-10 text-sm font-semibold text-slate-600">
+                <a href="#startseite" class="hover:text-blue-600 transition">Startseite</a>
+                <a href="#produkte" class="hover:text-blue-600 transition">Produkte</a>
+                <a href="#funktionen" class="hover:text-blue-600 transition">Funktionen</a>
+                <a href="#loesungen" class="hover:text-blue-600 transition">Lösungen</a>
+                <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <!-- Region Selector -->
+                <div class="relative" x-data="{ open: false }">
+                    <button @click="open = !open" class="flex items-center space-x-2 text-sm font-semibold text-slate-600 hover:text-blue-600 transition px-3 py-2 rounded-lg hover:bg-slate-100">
+                        <i class="fas fa-globe"></i>
+                        <span>DE</span>
+                        <i class="fas fa-chevron-down text-[10px]" :class="open ? 'rotate-180' : ''"></i>
+                    </button>
+                    <div x-show="open" 
+                         @click.away="open = false" 
+                         x-cloak 
+                         class="absolute right-0 mt-2 w-40 bg-white border border-slate-200 rounded-lg shadow-lg py-2 z-50">
+                        <a href="https://antidetect.gmbh" class="flex items-center justify-between px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50">
+                            Deutsch <i class="fas fa-check text-xs"></i>
+                        </a>
+                        <a href="https://antidetect.us" class="flex items-center px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 transition">
+                            English (US)
+                        </a>
+                        <a href="https://antidetect.nz" class="flex items-center px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 transition">
+                            English (NZ)
+                        </a>
+                        <a href="https://antidetect.vn" class="flex items-center px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 transition">
+                            Tiếng Việt
+                        </a>
+                        <a href="https://antidetect.nl" class="flex items-center px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 transition">
+                            Nederlands
+                        </a>
+                    </div>
+                </div>
+                <a href="https://antidetect.cloud" class="bg-blue-600 text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-blue-700 transition">
+                    Kostenlos testen
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section - German Professional Style -->
+<header id="startseite" class="gradient-bg py-24 lg:py-32">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur px-5 py-2 rounded-full text-cyan-300 text-sm font-medium mb-8">
+                <i class="fas fa-shield-alt"></i>
+                <span>Vertrauenswürdige Lösung für digitale Privatsphäre</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
+                Das komplette Ökosystem für<br>
+                <span class="text-cyan-400">digitale Identität</span>
+            </h1>
+            <p class="text-xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Verwalten Sie tausende Konten sicher und effizient. Unsere Cloud-basierte Architektur gewährleistet maximale Anonymität beim Skalieren Ihres Online-Geschäfts.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <a href="https://antidetect.cloud" class="w-full sm:w-auto bg-white text-slate-900 px-10 py-4 rounded-lg font-bold hover:bg-slate-100 transition shadow-lg">
+                    Jetzt starten
+                </a>
+                <a href="#produkte" class="w-full sm:w-auto border-2 border-white/30 text-white px-10 py-4 rounded-lg font-bold hover:bg-white/10 transition">
+                    Produkte entdecken
+                </a>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-8 text-sm text-slate-400">
+                <span class="flex items-center"><i class="fas fa-check-circle text-cyan-400 mr-2"></i> Keine Kreditkarte erforderlich</span>
+                <span class="flex items-center"><i class="fas fa-check-circle text-cyan-400 mr-2"></i> Sofortige Cloud-Synchronisation</span>
+                <span class="flex items-center"><i class="fas fa-check-circle text-cyan-400 mr-2"></i> DSGVO-konform</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Trust Indicators -->
+<section class="py-12 bg-white border-b border-slate-200">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-3xl font-bold text-slate-900">50.000+</div>
+                <div class="text-sm text-slate-500 mt-1">Aktive Nutzer</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-slate-900">99,9%</div>
+                <div class="text-sm text-slate-500 mt-1">Verfügbarkeit</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-slate-900">24/7</div>
+                <div class="text-sm text-slate-500 mt-1">Support</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-slate-900">100%</div>
+                <div class="text-sm text-slate-500 mt-1">Cloud-basiert</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section id="produkte" class="py-24 bg-slate-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Unsere Software-Suite</h2>
+            <p class="text-lg text-slate-600">Alles, was Sie brauchen, um Erkennungssysteme zu umgehen und mehrere Konten professionell zu verwalten.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Browser Card -->
+            <div class="bg-white rounded-2xl p-8 card-border">
+                <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                    <img src="assets/images/logo/logo-antidetect-browser.png" alt="Browser" class="w-8 h-8">
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Antidetect Browser</h3>
+                <p class="text-slate-600 mb-6">Erstellen Sie isolierte Browser-Profile mit fortschrittlichem Fingerprint-Spoofing. Basierend auf einer angepassten Firefox-Engine für Geschwindigkeit und Sicherheit.</p>
+                <ul class="space-y-3 mb-8 text-sm">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-500 mr-3 mt-1"></i>
+                        <span class="text-slate-600">Unbegrenzte Browser-Profile</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-500 mr-3 mt-1"></i>
+                        <span class="text-slate-600">Canvas & WebGL Schutz</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-blue-500 mr-3 mt-1"></i>
+                        <span class="text-slate-600">Besteht Pixelscan & IP-Hey Tests</span>
+                    </li>
+                </ul>
+                <a href="https://browser.antidetect.cloud" class="inline-flex items-center font-bold text-blue-600 hover:text-blue-700">
+                    Mehr erfahren <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Android Card - Featured -->
+            <div class="bg-slate-900 rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl"></div>
+                <div class="relative">
+                    <div class="bg-white/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <img src="assets/images/logo/logo-antidetect-android.png" alt="Android" class="w-8 h-8">
+                    </div>
+                    <div class="inline-block bg-cyan-500 text-xs font-bold px-3 py-1 rounded-full mb-4">BELIEBT</div>
+                    <h3 class="text-xl font-bold mb-3">Antidetect Android</h3>
+                    <p class="text-slate-300 mb-6">Spoofing von Android-Geräteparametern und Emulator-Daten. Perfekt für Mobile Account Farming und App-Tests.</p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                            <span class="text-slate-300">IMEI, Seriennummer & Android ID ändern</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                            <span class="text-slate-300">GPS & Netzwerk-Details spoofing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                            <span class="text-slate-300">Massenregistrierung mobiler Apps</span>
+                        </li>
+                    </ul>
+                    <a href="https://android.antidetect.cloud" class="inline-block w-full bg-white text-slate-900 text-center px-6 py-3 rounded-lg font-bold hover:bg-slate-100 transition">
+                        Android entdecken
+                    </a>
+                </div>
+            </div>
+
+            <!-- Machine Card -->
+            <div class="bg-white rounded-2xl p-8 card-border">
+                <div class="bg-purple-100 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                    <img src="assets/images/logo/logo-antidetect-machine.png" alt="Machine" class="w-8 h-8">
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Antidetect Machine</h3>
+                <p class="text-slate-600 mb-6">Hardware-Level-Spoofing für PCs und virtuelle Maschinen. Ändern Sie CPU, GPU und Festplatten-Seriennummern mit einem Klick.</p>
+                <ul class="space-y-3 mb-8 text-sm">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mr-3 mt-1"></i>
+                        <span class="text-slate-600">Motherboard & Festplatten-Seriennummern spoofing</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mr-3 mt-1"></i>
+                        <span class="text-slate-600">Anti-VM-Erkennungstechnologie</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-purple-500 mr-3 mt-1"></i>
+                        <span class="text-slate-600">Ideal für Amazon-Verkäufer & Dropshipper</span>
+                    </li>
+                </ul>
+                <a href="https://machine.antidetect.cloud" class="inline-flex items-center font-bold text-blue-600 hover:text-blue-700">
+                    Mehr erfahren <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section - Two Column Layout -->
+<section id="funktionen" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Warum Branchenführer Antidetect Cloud wählen</h2>
+            <p class="text-lg text-slate-600">Eine umfassende Lösung für datenschutzbewusste Profis, die hohe Leistung und Zuverlässigkeit fordern.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div class="bg-slate-50 rounded-2xl p-8 flex gap-5">
+                <div class="bg-blue-600 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-cloud text-white text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">100% Cloud-Architektur</h4>
+                    <p class="text-slate-600">Greifen Sie von jedem Gerät auf Ihre Profile zu. Daten werden sofort in Ihrem gesamten Team synchronisiert.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-8 flex gap-5">
+                <div class="bg-green-600 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-fingerprint text-white text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">Elite-Spoofing</h4>
+                    <p class="text-slate-600">Umgehen Sie die fortschrittlichsten Tracking-Systeme mit pixelgenauer Hardware-Simulation.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-8 flex gap-5">
+                <div class="bg-purple-600 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-users text-white text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">Team-Zusammenarbeit</h4>
+                    <p class="text-slate-600">Teilen Sie Profile sicher und verwalten Sie Berechtigungen für großangelegte Operationen.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-2xl p-8 flex gap-5">
+                <div class="bg-orange-600 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <i class="fas fa-robot text-white text-lg"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-2">Workflow-Automatisierung</h4>
+                    <p class="text-slate-600">Integrierte API und Scripting-Unterstützung zur Automatisierung wiederkehrender Aufgaben.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16" x-data="{ activeSlide: 1 }">
+            <div class="relative flex items-center justify-center gap-4 md:gap-6 overflow-hidden px-4">
+                <!-- Left Image (blurred/faded) -->
+                <div class="hidden md:block w-1/4 flex-shrink-0 cursor-pointer transition-all duration-500"
+                     :class="activeSlide === 0 ? 'opacity-100 scale-100' : 'opacity-40 scale-90 blur-[2px]'"
+                     @click="activeSlide = 0">
+                    <div class="bg-slate-800 rounded-xl p-2 shadow-xl">
+                        <img src="assets/images/android/android-open.webp" alt="Android Antidetect" class="rounded-lg w-full">
+                    </div>
+                </div>
+                
+                <!-- Center Image (main) -->
+                <div class="w-full md:w-1/2 flex-shrink-0 cursor-pointer transition-all duration-500 z-10"
+                     :class="activeSlide === 1 ? 'opacity-100 scale-100' : 'opacity-40 scale-90 blur-[2px]'"
+                     @click="activeSlide = 1">
+                    <div class="bg-slate-900 rounded-2xl p-3 md:p-4 shadow-2xl">
+                        <img src="assets/images/browser/browser-open.webp" alt="Antidetect Browser Interface" class="rounded-xl w-full">
+                    </div>
+                </div>
+                
+                <!-- Right Image (blurred/faded) -->
+                <div class="hidden md:block w-1/4 flex-shrink-0 cursor-pointer transition-all duration-500"
+                     :class="activeSlide === 2 ? 'opacity-100 scale-100' : 'opacity-40 scale-90 blur-[2px]'"
+                     @click="activeSlide = 2">
+                    <div class="bg-slate-800 rounded-xl p-2 shadow-xl">
+                        <img src="assets/images/android/android-inspector.webp" alt="Android Inspector" class="rounded-lg w-full">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide Indicators -->
+            <div class="flex justify-center gap-3 mt-6">
+                <button @click="activeSlide = 0" 
+                        class="w-2.5 h-2.5 rounded-full transition-all duration-300"
+                        :class="activeSlide === 0 ? 'bg-cyan-500 w-8' : 'bg-slate-400 hover:bg-slate-300'"></button>
+                <button @click="activeSlide = 1" 
+                        class="w-2.5 h-2.5 rounded-full transition-all duration-300"
+                        :class="activeSlide === 1 ? 'bg-cyan-500 w-8' : 'bg-slate-400 hover:bg-slate-300'"></button>
+                <button @click="activeSlide = 2" 
+                        class="w-2.5 h-2.5 rounded-full transition-all duration-300"
+                        :class="activeSlide === 2 ? 'bg-cyan-500 w-8' : 'bg-slate-400 hover:bg-slate-300'"></button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Solutions Section -->
+<section id="loesungen" class="py-24 bg-slate-900">
+    <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Für jeden Anwendungsfall entwickelt</h2>
+            <p class="text-lg text-slate-400">Skalieren Sie Ihr Geschäft ohne Einschränkungen durch Plattform-Restriktionen.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700">
+                <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-chart-line text-blue-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Affiliate & MMO</h3>
+                <p class="text-slate-400 mb-6">Meistern Sie Dropshipping, NFT-Gaming, Airdrops und Multi-Account-Farming mit Leichtigkeit.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1.5 rounded-full font-semibold">Dropshipping</span>
+                    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1.5 rounded-full font-semibold">Krypto</span>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700">
+                <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-code text-purple-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Entwickler & Startups</h3>
+                <p class="text-slate-400 mb-6">Web-Scraping, QA-Tests und DevOps in sauberen, isolierten Umgebungen ohne Erkennung.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-purple-500/20 text-purple-400 text-xs px-3 py-1.5 rounded-full font-semibold">Web Scraping</span>
+                    <span class="bg-purple-500/20 text-purple-400 text-xs px-3 py-1.5 rounded-full font-semibold">QA-Tests</span>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700">
+                <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-bullhorn text-green-400 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Werbung & Marketing</h3>
+                <p class="text-slate-400 mb-6">Verwalten Sie Facebook Ads, Google Ads und Social-Media-Kampagnen ohne Risiko einer Kontosperrung.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-green-500/20 text-green-400 text-xs px-3 py-1.5 rounded-full font-semibold">Facebook Ads</span>
+                    <span class="bg-green-500/20 text-green-400 text-xs px-3 py-1.5 rounded-full font-semibold">Google Ads</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 max-w-4xl mx-auto text-center border-t border-slate-700 pt-16">
+            <blockquote class="text-xl md:text-2xl text-slate-300 italic leading-relaxed">
+                „Antidetect Cloud ist nicht nur ein Browser – es ist ein umfassendes Ökosystem, das Ihnen ermöglicht, anonym zu arbeiten und die volle Kontrolle über Ihre digitale Identität zu übernehmen."
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 text-center mb-12">Häufig gestellte Fragen</h2>
+            
+            <div class="space-y-4" x-data="{ active: 1 }">
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button @click="active = active === 1 ? 0 : 1" class="w-full px-6 py-5 text-left font-semibold flex justify-between items-center hover:bg-slate-50 transition">
+                        <span>Ist Antidetect Cloud sicher für meine Daten?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition" :class="active === 1 ? 'rotate-180' : ''"></i>
+                    </button>
+                    <div x-show="active === 1" x-collapse x-cloak class="px-6 pb-5 text-slate-600 leading-relaxed">
+                        Sicherheit hat für uns höchste Priorität. Ihre Daten werden vollständig verschlüsselt und niemals an Dritte weitergegeben. Unsere Cloud-Architektur gewährleistet eine zentrale, sichere Verwaltung all Ihrer Profile. Wir sind DSGVO-konform.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button @click="active = active === 2 ? 0 : 2" class="w-full px-6 py-5 text-left font-semibold flex justify-between items-center hover:bg-slate-50 transition">
+                        <span>Kann ich die Software vor dem Kauf testen?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition" :class="active === 2 ? 'rotate-180' : ''"></i>
+                    </button>
+                    <div x-show="active === 2" x-collapse x-cloak class="px-6 pb-5 text-slate-600 leading-relaxed">
+                        Ja! Wir bieten einen lebenslangen kostenlosen Plan mit Basisfunktionen an, damit Sie das Ökosystem erleben können, bevor Sie sich für ein Premium-Abo entscheiden.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button @click="active = active === 3 ? 0 : 3" class="w-full px-6 py-5 text-left font-semibold flex justify-between items-center hover:bg-slate-50 transition">
+                        <span>Welche Betriebssysteme werden unterstützt?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition" :class="active === 3 ? 'rotate-180' : ''"></i>
+                    </button>
+                    <div x-show="active === 3" x-collapse x-cloak class="px-6 pb-5 text-slate-600 leading-relaxed">
+                        Als Cloud-basierte Plattform können Sie von fast jedem Gerät mit Internetverbindung auf Antidetect Cloud zugreifen. Unsere spezialisierten Desktop-Anwendungen sind für Windows, macOS und Linux verfügbar.
+                    </div>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl overflow-hidden">
+                    <button @click="active = active === 4 ? 0 : 4" class="w-full px-6 py-5 text-left font-semibold flex justify-between items-center hover:bg-slate-50 transition">
+                        <span>Bieten Sie Support auf Deutsch an?</span>
+                        <i class="fas fa-chevron-down text-slate-400 transition" :class="active === 4 ? 'rotate-180' : ''"></i>
+                    </button>
+                    <div x-show="active === 4" x-collapse x-cloak class="px-6 pb-5 text-slate-600 leading-relaxed">
+                        Ja, unser Support-Team steht Ihnen rund um die Uhr zur Verfügung, auch auf Deutsch. Wir verstehen die Anforderungen des deutschen Marktes und bieten entsprechend zugeschnittene Unterstützung.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 accent-gradient">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Bereit, Ihre Online-Präsenz zu skalieren?</h2>
+        <p class="text-lg text-white/80 mb-10 max-w-2xl mx-auto">Starten Sie noch heute kostenlos und erleben Sie die Vorteile von Antidetect Cloud.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://antidetect.cloud" class="bg-white text-slate-900 px-10 py-4 rounded-lg font-bold text-lg hover:bg-slate-100 transition shadow-lg">
+                Kostenlos starten
+            </a>
+            <a href="mailto:contact@antidetect.cloud" class="border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">
+                Vertrieb kontaktieren
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-900 text-white pt-20 pb-10">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1">
+                <div class="flex items-center space-x-3 mb-6">
+                    <img src="assets/images/logo/logo.png" alt="Logo" class="h-9 w-9">
+                    <div>
+                        <span class="text-xl font-bold">Antidetect</span>
+                        <span class="text-xl font-bold text-blue-400">Cloud</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Das weltweit führende Ökosystem für digitales Identitätsmanagement und Multi-Accounting-Privatsphäre.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://facebook.com/antidetectcloud" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fab fa-facebook"></i></a>
+                    <a href="https://t.me/antidetectsoftware" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fab fa-telegram"></i></a>
+                    <a href="https://x.com/antidetectcloud" class="text-slate-400 hover:text-white transition text-lg"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Produkte</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li><a href="https://browser.antidetect.cloud" class="hover:text-blue-400 transition">Antidetect Browser</a></li>
+                    <li><a href="https://android.antidetect.cloud" class="hover:text-blue-400 transition">Antidetect Android</a></li>
+                    <li><a href="https://machine.antidetect.cloud" class="hover:text-blue-400 transition">Antidetect Machine</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Kontakt</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li><i class="fas fa-envelope mr-2 text-blue-400"></i> contact@antidetect.cloud</li>
+                    <li><i class="fas fa-globe mr-2 text-blue-400"></i> antidetect.gmbh</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Rechtliches</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li><a href="https://antidetect.cloud/terms-of-service" class="hover:text-blue-400 transition">Nutzungsbedingungen</a></li>
+                    <li><a href="https://antidetect.cloud/privacy-policy" class="hover:text-blue-400 transition">Datenschutzerklärung</a></li>
+                    <li><a href="https://antidetect.cloud/sales-policy" class="hover:text-blue-400 transition">Verkaufsrichtlinien</a></li>
+                    <li><a href="https://antidetect.cloud/support-policy" class="hover:text-blue-400 transition">Support-Richtlinien</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <p>&copy; <span id="year"></span> Antidetect Cloud. Alle Rechte vorbehalten.</p>
+            <div class="flex items-center space-x-6">
+                <span class="text-white font-semibold">Deutsch</span>
+                <a href="https://antidetect.us" class="hover:text-blue-400 transition">English (US)</a>
+                <a href="https://antidetect.nz" class="hover:text-blue-400 transition">English (NZ)</a>
+                <a href="https://antidetect.vn" class="hover:text-blue-400 transition">Tiếng Việt</a>
+                <a href="https://antidetect.nl" class="hover:text-blue-400 transition">Nederlands</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
