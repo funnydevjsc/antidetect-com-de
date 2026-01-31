@@ -435,6 +435,142 @@
     </div>
 </section>
 
+<!-- Pricing Section -->
+<section id="preise" class="py-24 bg-slate-50">
+    <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Flexible Preispläne</h2>
+            <p class="text-lg text-slate-600">Test, Solo oder Team? Wir haben die richtige Lösung für Sie.</p>
+        </div>
+
+        <div x-data="{ cycle: 'monthly' }">
+            <!-- Pricing Toggle -->
+            <div class="flex items-center justify-center mb-12">
+                <div class="inline-flex bg-slate-200 rounded-xl p-1">
+                    <button @click="cycle = 'monthly'" :class="cycle === 'monthly' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-blue-600'" class="px-6 py-2.5 rounded-lg font-semibold text-sm transition">Monatlich</button>
+                    <button @click="cycle = 'biannual'" :class="cycle === 'biannual' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-blue-600'" class="px-6 py-2.5 rounded-lg font-semibold text-sm transition">Halbjährlich</button>
+                    <button @click="cycle = 'annual'" :class="cycle === 'annual' ? 'bg-blue-600 text-white' : 'text-slate-600 hover:text-blue-600'" class="px-6 py-2.5 rounded-lg font-semibold text-sm transition">Jährlich</button>
+                </div>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Free -->
+                <div class="bg-white rounded-2xl p-8 card-border">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Kostenlos</h3>
+                    <p class="text-slate-500 text-sm mb-4">Kostenloses Paket zum Testen</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-slate-900">$0</span>
+                        <span class="text-slate-500">/für immer</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">30 Lokale Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Für immer kostenlos</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Einfaches Testen</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Community-Support</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Kostenlose Updates</span></li>
+                    </ul>
+                    <a href="https://portal.antidetect.cloud/" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Kostenlos testen</a>
+                </div>
+
+                <!-- Perpetual - Featured -->
+                <div class="bg-slate-900 rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl"></div>
+                    <div class="relative">
+                        <div class="inline-block bg-cyan-500 text-xs font-bold px-3 py-1 rounded-full mb-4">BELIEBT</div>
+                        <h3 class="text-xl font-bold mb-2">Unbefristet</h3>
+                        <p class="text-slate-300 text-sm mb-4">Einmaliger Kauf</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$300</span>
+                            <span class="text-slate-300">/einmalig</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-sm">
+                            <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">Unbegrenzte lokale Profile</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">Einmalige Investition</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">Kein Ablaufdatum</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">Ticket-Support</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">Kostenlose Updates</span></li>
+                        </ul>
+                        <a href="https://portal.antidetect.cloud/" class="block text-center py-3 bg-white text-slate-900 rounded-lg font-bold hover:bg-slate-100 transition">Jetzt kaufen</a>
+                    </div>
+                </div>
+
+                <!-- Mini -->
+                <div class="bg-white rounded-2xl p-8 card-border">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Mini</h3>
+                    <p class="text-slate-500 text-sm mb-4">Für Einsteiger</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-slate-900" x-text="cycle === 'monthly' ? '$15' : cycle === 'biannual' ? '$86' : '$153'">$15</span>
+                        <span class="text-slate-500" x-text="cycle === 'monthly' ? '/Monat' : cycle === 'biannual' ? '/6 Monate' : '/Jahr'">/Monat</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">100 lokale Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">50 Cloud-Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Automatisierungs-Tools</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Temp-Mail-Tools</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Ticket-Support</span></li>
+                    </ul>
+                    <a href="https://portal.antidetect.cloud/" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
+                </div>
+
+                <!-- Solo -->
+                <div class="bg-white rounded-2xl p-8 card-border">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Solo</h3>
+                    <p class="text-slate-500 text-sm mb-4">Für Profis</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-slate-900" x-text="cycle === 'monthly' ? '$25' : cycle === 'biannual' ? '$143' : '$255'">$25</span>
+                        <span class="text-slate-500" x-text="cycle === 'monthly' ? '/Monat' : cycle === 'biannual' ? '/6 Monate' : '/Jahr'">/Monat</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Unbegrenzte lokale Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">100 Cloud-Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Automatisierungs-Tools</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Temp-Mail-Tools</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Ticket-Support</span></li>
+                    </ul>
+                    <a href="https://portal.antidetect.cloud/" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
+                </div>
+
+                <!-- Team -->
+                <div class="bg-white rounded-2xl p-8 card-border">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Team</h3>
+                    <p class="text-slate-500 text-sm mb-4">Für Teams</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-slate-900" x-text="cycle === 'monthly' ? '$100' : cycle === 'biannual' ? '$570' : '$1020'">$100</span>
+                        <span class="text-slate-500" x-text="cycle === 'monthly' ? '/Monat' : cycle === 'biannual' ? '/6 Monate' : '/Jahr'">/Monat</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Unbegrenzte lokale Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">500 Cloud-Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">30 Teammitglieder</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Automatisierungs-Tools</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Prioritäts-Support</span></li>
+                    </ul>
+                    <a href="https://portal.antidetect.cloud/" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
+                </div>
+
+                <!-- Company -->
+                <div class="bg-white rounded-2xl p-8 card-border">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Unternehmen</h3>
+                    <p class="text-slate-500 text-sm mb-4">Für große Gruppen</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-slate-900" x-text="cycle === 'monthly' ? '$180' : cycle === 'biannual' ? '$1026' : '$1836'">$180</span>
+                        <span class="text-slate-500" x-text="cycle === 'monthly' ? '/Monat' : cycle === 'biannual' ? '/6 Monate' : '/Jahr'">/Monat</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Unbegrenzte lokale Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">1000 Cloud-Profile</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">100 Teammitglieder</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Automatisierungs-Tools</span></li>
+                        <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Prioritäts-Support</span></li>
+                    </ul>
+                    <a href="https://portal.antidetect.cloud/" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- FAQ Section -->
 <section id="faq" class="py-24 bg-white">
     <div class="container mx-auto px-6">
@@ -520,7 +656,6 @@
                 <div class="flex space-x-4">
                     <a href="https://facebook.com/antidetectcloud" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fab fa-facebook"></i></a>
                     <a href="https://t.me/antidetectsoftware" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fab fa-telegram"></i></a>
-                    <a href="https://x.com/antidetectcloud" class="text-slate-400 hover:text-white transition text-lg"><i class="fab fa-x-twitter"></i></a>
                 </div>
             </div>
             <div>
