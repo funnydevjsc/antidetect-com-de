@@ -1,0 +1,54 @@
+# Antidetect Cloud - Datenschutz & Multi-Account-Verwaltung
+
+> Antidetect Cloud ist ein umfassendes Ökosystem für digitales Identitätsmanagement und Online-Privatsphäre. Erstellen Sie unbegrenzte Browser-Profile mit einzigartigen Fingerprints, fälschen Sie PC-Hardware und verwalten Sie Android-Geräteidentitäten für sichere Multi-Account-Operationen.
+
+## Über uns
+
+Antidetect Cloud bietet eine komplette Suite von Tools zur Verwaltung digitaler Identitäten über Browser, Desktop-Computer und mobile Geräte. Unsere cloud-basierte Plattform ermöglicht sichere Multi-Account-Verwaltung ohne Erkennung.
+
+## Produkte
+
+- [Antidetect Browser](https://browser.antidetect.cloud): Anti-Fingerprint-Browser mit unbegrenzten Profilen
+- [Antidetect Android](https://android.antidetect.cloud): Mobile Geräte-Fingerprint-Spoofing
+- [Antidetect Machine](https://machine.antidetect.cloud): Hardware-Fingerprint-Spoofing für PC und VMs
+
+## Hauptfunktionen
+
+- 100% cloud-basierte Architektur
+- Fortschrittliche Fingerprint-Emulation (Canvas, WebGL, WebRTC, Audio)
+- Teamzusammenarbeit mit Profilfreigabe
+- Automatisierungs-API für Entwickler
+- Besteht IPHey, Pixelscan, Google Recaptcha v3
+
+## Anwendungsfälle
+
+- E-Commerce Multi-Account-Verwaltung
+- Affiliate Marketing
+- Digitale Werbung (Facebook Ads, Google Ads)
+- Web Scraping und Datensammlung
+- Social Media Verwaltung
+- Dropshipping-Operationen
+
+## Preise
+
+- Kostenlos: 30 lokale Profile, für immer kostenlos
+- Dauerhaft: $300 einmalig, unbegrenzte lokale Profile
+- Mini: $15/Monat - 100 lokal, 50 Cloud-Profile
+- Solo: $25/Monat - Unbegrenzt lokal, 100 Cloud-Profile
+- Team: $100/Monat - 500 Cloud-Profile, 30 Mitglieder
+- Company: $180/Monat - 1000 Cloud-Profile, 100 Mitglieder
+
+## Kontakt
+
+- Website: https://antidetect.cloud
+- Portal: https://portal.antidetect.cloud
+- Email: contact@antidetect.cloud
+- Telegram: https://t.me/antidetectsoftware
+
+## Regionale Websites
+
+- Deutsch: https://antidetect.gmbh
+- English (US): https://antidetect.us
+- English (NZ): https://antidetect.nz
+- Nederlands: https://antidetect.nl
+- Tiếng Việt: https://antidetect.vn
