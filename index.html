@@ -8,28 +8,6 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TF3PS4Z6');</script>
     <!-- End Google Tag Manager -->
-    <!-- Auto Language Redirect -->
-    <script>
-    (function() {
-        if (sessionStorage.getItem('langRedirected')) return;
-        var lang = navigator.language || navigator.userLanguage;
-        var langMap = {
-            'vi': 'https://antidetect.vn',
-            'en-US': 'https://antidetect.us',
-            'en-NZ': 'https://antidetect.nz',
-            'en-AU': 'https://antidetect.nz',
-            'nl': 'https://antidetect.nl',
-            'de': 'https://antidetect.gmbh',
-            'ru': 'https://antidetect.website.yandexcloud.net'
-        };
-        var currentDomain = 'https://antidetect.gmbh';
-        var targetUrl = langMap[lang] || langMap[lang.split('-')[0]];
-        if (targetUrl && targetUrl !== currentDomain) {
-            sessionStorage.setItem('langRedirected', '1');
-            window.location.href = targetUrl;
-        }
-    })();
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Antidetect Cloud">
