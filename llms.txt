@@ -58,6 +58,8 @@ Antidetect Cloud bietet eine komplette Suite von Tools zur Verwaltung digitaler 
 - Antidetect Cloud Browser: https://browser.antidetect.cloud
 - Antidetect Cloud Machine: https://machine.antidetect.cloud
 - Antidetect Cloud Android: https://android.antidetect.cloud
-- Antidetect Cloud iOS: https://ios.antidetect.cloud
-- Vifox Browser: https://vifox.antidetect.cloud
+- Antidetect iOS: https://ios.antidetect.cloud
+- Vifox Mobile: https://vifox.antidetect.cloud
+- Vifox Mobile App Store: https://apps.apple.com/vn/app/vifox/id6772413362?l=vi
+- Vifox Mobile Google Play: https://play.google.com/store/apps/details?id=vifox.antidetect.cloud
 
