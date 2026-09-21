@@ -1,5 +1,5 @@
 Contact: mailto:contact@antidetect.cloud
-Expires: 2055-12-06T17:00:00.000Z
+Expires: 2027-09-01T00:00:00Z
 Preferred-Languages: en
+Canonical: https://antidetect.gmbh/.well-known/security.txt
 Canonical: https://antidetect.gmbh/security.txt
-Policy: https://antidetect.cloud/privacy-policy

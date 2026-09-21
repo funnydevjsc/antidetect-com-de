@@ -1,4 +1,10 @@
+# Public static landing: https://antidetect.gmbh
 User-agent: *
 Allow: /
+
+# Repository and development files are not search content.
+# These crawl directives do not replace server access controls.
+Disallow: /.git/
+Disallow: /node_modules/
 
 Sitemap: https://antidetect.gmbh/sitemap.xml
