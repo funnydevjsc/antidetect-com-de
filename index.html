@@ -134,6 +134,18 @@
 .ac-products__logo{display:block;width:48px;height:48px;object-fit:contain;border-radius:10px;margin:0 0 16px}
 .ac-products__website{display:block;margin-top:16px;font-size:13px;line-height:1.5;color:#5435c8;overflow-wrap:anywhere}
 </style>
+
+<style id="landing-footer-layout">
+/* Keep localized contact details and navigation readable at narrow widths. */
+footer .landing-operator{font-size:14px;line-height:1.7;margin:0 0 24px;overflow-wrap:anywhere;text-transform:none;letter-spacing:normal;font-weight:400}
+footer .landing-operator p{margin:0 0 8px}
+footer .landing-operator address{font-style:normal}
+footer a{overflow-wrap:anywhere}
+footer .grid>div,footer .foot-grid>div{min-width:0}
+footer .flex[class*="space-x-"]{flex-wrap:wrap;gap:12px}
+footer .flex[class*="space-x-"]>:not([hidden])~:not([hidden]){margin-left:0;margin-right:0}
+footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+</style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 <!-- Google Tag Manager (noscript) -->
@@ -344,11 +356,11 @@
                     <img src="assets/ecosystem/ios.png" alt="Antidetect iOS" width="64" height="64" loading="lazy" decoding="async" style="display:block;width:64px;height:64px;object-fit:contain;border-radius:12px;">
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Antidetect iOS</h3>
-                <p class="text-slate-600 mb-6">iPhone- und iPad-Workflows mit Cloud-Profilen, proxy-fähigen mobilen Sessions und iOS-Datenschutzkontrollen.</p>
+                <p class="text-slate-600 mb-6">Virtuelle iPhone-Profile auf Apple Silicon mit Vijube erstellen, verwalten und automatisieren.</p>
                 <ul class="space-y-3 mb-8 text-sm">
-                    <li class="flex items-start"><i class="fas fa-check text-slate-500 mr-3 mt-1"></i><span class="text-slate-600">iPhone- und iPad-Workflows</span></li>
-                    <li class="flex items-start"><i class="fas fa-check text-slate-500 mr-3 mt-1"></i><span class="text-slate-600">Cloud-Profilverwaltung</span></li>
-                    <li class="flex items-start"><i class="fas fa-check text-slate-500 mr-3 mt-1"></i><span class="text-slate-600">Proxy-fähige mobile Sessions</span></li>
+                    <li class="flex items-start"><i class="fas fa-check text-slate-500 mr-3 mt-1"></i><span class="text-slate-600">Virtuelle iPhone-Profile</span></li>
+                    <li class="flex items-start"><i class="fas fa-check text-slate-500 mr-3 mt-1"></i><span class="text-slate-600">Für Macs mit Apple Silicon</span></li>
+                    <li class="flex items-start"><i class="fas fa-check text-slate-500 mr-3 mt-1"></i><span class="text-slate-600">Profilisolierung und Automatisierung</span></li>
                 </ul>
                 <a href="https://ios.antidetect.cloud" class="inline-block w-full border border-slate-200 text-slate-700 text-center px-6 py-3 rounded-lg font-bold hover:bg-slate-50 transition">iOS entdecken</a>
             </div>
@@ -798,9 +810,10 @@
                 <p class="text-slate-400 text-sm leading-relaxed mb-6">
                     Das weltweit führende Ökosystem für digitales Identitätsmanagement und Multi-Accounting-Privatsphäre.
                 </p>
+                <div class="landing-operator"><p><strong>Betreiber:</strong> Antidetect Cloud., Ltd</p><address><strong>Hauptsitz:</strong> 601 W Lockeford St, Lodi, CA, 95240 United States</address></div>
                 <div class="flex space-x-4">
-                    <a href="https://facebook.com/antidetectcloud" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fab fa-facebook"></i></a>
-                    <a href="https://t.me/antidetectsoftware" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fab fa-telegram"></i></a>
+                    <a aria-label="Facebook" href="https://facebook.com/antidetectcloud" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fab fa-facebook"></i></a>
+                    <a aria-label="Telegram" href="https://t.me/antidetectsoftware" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
             <div>
@@ -817,17 +830,19 @@
             <div>
                 <h4 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Kontakt</h4>
                 <ul class="space-y-4 text-sm text-slate-400">
-                    <li><i class="fas fa-envelope mr-2 text-blue-400"></i> contact@antidetect.cloud</li>
+                    <li><i class="fas fa-envelope mr-2 text-blue-400"></i> <a href="mailto:contact@antidetect.cloud">contact@antidetect.cloud</a></li>
                     <li><i class="fas fa-globe mr-2 text-blue-400"></i> antidetect.gmbh</li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Rechtliches</h4>
                 <ul class="space-y-4 text-sm text-slate-400">
-                    <li><a href="https://antidetect.cloud/terms-of-service" class="hover:text-blue-400 transition">Nutzungsbedingungen</a></li>
-                    <li><a href="https://antidetect.cloud/privacy-policy" class="hover:text-blue-400 transition">Datenschutzerklärung</a></li>
-                    <li><a href="https://antidetect.cloud/sales-policy" class="hover:text-blue-400 transition">Verkaufsrichtlinien</a></li>
-                    <li><a href="https://antidetect.cloud/support-policy" class="hover:text-blue-400 transition">Support-Richtlinien</a></li>
+                    <li><a href="https://antidetect.cloud/terms-of-service.html" class="hover:text-blue-400 transition">Nutzungsbedingungen</a></li>
+                    <li><a href="https://antidetect.cloud/privacy-policy.html" class="hover:text-blue-400 transition">Datenschutzerklärung</a></li>
+                    <li><a href="https://antidetect.cloud/sales-policy.html" class="hover:text-blue-400 transition">Verkaufsrichtlinien</a></li>
+                    <li><a href="https://antidetect.cloud/support-policy.html" class="hover:text-blue-400 transition">Support-Richtlinien</a></li>
+                    <li><a href="https://antidetect.cloud/vpn-policy.html" class="hover:text-blue-400 transition">VPN-Richtlinie</a></li>
+                    <li><a href="https://antidetect.cloud/agent-policy.html" class="hover:text-blue-400 transition">Vertreterrichtlinie</a></li>
                 </ul>
             </div>
         </div>
