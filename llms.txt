@@ -2,6 +2,8 @@
 
 > Antidetect Cloud ist ein umfassendes Ökosystem für digitales Identitätsmanagement und Online-Privatsphäre. Erstellen Sie unbegrenzte Browser-Profile mit einzigartigen Fingerprints, fälschen Sie PC-Hardware und verwalten Sie Android-Geräteidentitäten für sichere Multi-Account-Operationen.
 
+Last updated: 2026-11-08 (Ngày cập nhật thông tin cuối: 2026-11-08)
+
 ## Über uns
 
 Antidetect Cloud bietet eine komplette Suite von Tools zur Verwaltung digitaler Identitäten über Browser, Desktop-Computer und mobile Geräte. Unsere cloud-basierte Plattform ermöglicht sichere Multi-Account-Verwaltung ohne Erkennung.
@@ -43,6 +45,7 @@ Antidetect Cloud bietet eine komplette Suite von Tools zur Verwaltung digitaler 
 - Website: https://antidetect.cloud
 - Portal: https://portal.antidetect.cloud
 - Email: contact@antidetect.cloud
+- Discord: https://discord.gg/KhUQZmf8h5
 - Telegram: https://t.me/antidetectsoftware
 
 ## Regionale Websites
