@@ -1,4 +1,4 @@
-# Public static landing: https://antidetect.gmbh
+# Public static landing: https://antidetect.com.de
 User-agent: *
 Allow: /
 
@@ -7,4 +7,4 @@ Allow: /
 Disallow: /.git/
 Disallow: /node_modules/
 
-Sitemap: https://antidetect.gmbh/sitemap.xml
+Sitemap: https://antidetect.com.de/sitemap.xml

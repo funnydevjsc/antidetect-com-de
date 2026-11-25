@@ -16,21 +16,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Antidetect Cloud">
     <title>Antidetect Cloud - Professionelle Software für digitale Identität</title>
-    <link rel="canonical" href="https://antidetect.gmbh/" />
-    <meta name="description" content="Antidetect Cloud: Die führende deutsche Software für Multi-Account-Management und digitale Anonymität. Professionelles Browser-Fingerprinting, Android-Spoofing und Hardware-Maskierung. DSGVO-konform, 100% Cloud-basiert. Jetzt starten!">
-    <meta name="keywords" content="Antidetect Browser, Multi-Account-Management, Browser-Fingerprinting-Schutz, digitaler Identitätsschutz, anonymer Browser, Cloud-Profile, Privatsphäre-Tools">
-    <link rel="icon" href="https://antidetectcloud.b-cdn.net/antidetect-gmbh/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://antidetect.com.de/" />
+    <link rel="alternate" hreflang="de" href="https://antidetect.com.de/" />
+    <link rel="alternate" hreflang="de-de" href="https://antidetect.com.de/" />
+    <link rel="alternate" hreflang="x-default" href="https://antidetect.cloud/" />
+    <link rel="alternate" hreflang="en-gb" href="https://antidetect.uk/" />
+    <link rel="alternate" hreflang="en-us" href="https://antidetect.us/" />
+    <link rel="alternate" hreflang="vi" href="https://antidetect.vn/" />
+    <link rel="alternate" hreflang="fr-fr" href="https://antidetect.fr/" />
+    <link rel="alternate" hreflang="it-it" href="https://antidetect.it/" />
+    <link rel="alternate" hreflang="nl-nl" href="https://antidetect.nl/" />
+    <link rel="alternate" hreflang="ru-ru" href="https://antidetect.com.ru/" />
+    <meta name="description" content="Antidetect Cloud: Professionelle Software für Mehrfachkonten-Verwaltung und digitale Anonymität im deutschsprachigen Raum. Fortschrittliches Browser-Fingerprinting, Android-Gerätevirtualisierung und Hardware-Schutz – DSGVO-konform und vollständig cloudbasiert.">
+    <meta name="keywords" content="Antidetect Browser, Mehrfachkonten-Verwaltung, Multi-Account-Management, Browser-Fingerprinting-Schutz, digitaler Identitätsschutz, anonymer Browser, Cloud-Profile, Datenschutz-Werkzeuge">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- SEO Meta Tags -->
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Antidetect Cloud">
     <meta property="og:title" content="Antidetect Cloud - Professionelle Software für digitale Identität">
     <meta property="og:description" content="Verwalten Sie mehrere Konten sicher mit fortschrittlichem Browser-Fingerprinting und Gerätespoofing. Die All-in-One-Lösung für digitales Identitätsmanagement.">
-    <meta property="og:image" content="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/index/hero-image.webp">
-    <meta property="og:url" content="https://antidetect.gmbh">
+    <meta property="og:image" content="https://antidetect.com.de/assets/images/index/hero-image.webp">
+    <meta property="og:url" content="https://antidetect.com.de">
     <meta name="twitter:card" content="summary_large_image">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/css/style.css">
-    <script src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/js/vendors/alpinejs.min.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/vendors/alpine-collapse.min.js" defer></script>
+    <script src="assets/js/vendors/alpinejs.min.js" defer></script>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript><style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap');
@@ -179,19 +193,63 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
         contain-intrinsic-size: 1px 500px;
       }
     </style>
+    <!-- Meta Pixel Code (586278576865331 - Lazy) -->
+    <script>
+        (function(w, d) {
+            w.dataLayer = w.dataLayer || [];
+            w.__ADC_FB_PIXEL_ID = '586278576865331';
+            w.__ADC_FB_DIRECT = true;
+            if (!w.fbq) {
+                var n = w.fbq = function() {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+                };
+                if (!w._fbq) w._fbq = n;
+                n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+            }
+            if (!w.__ADC_FB_INITED_586278576865331) {
+                w.__ADC_FB_INITED_586278576865331 = true;
+                w.fbq('init', '586278576865331');
+                w.fbq('set', 'agent', 'antidetect_ecosystem', '586278576865331');
+            }
+            if (!w.__ADC_PV_SENT_586278576865331) {
+                w.__ADC_PV_SENT_586278576865331 = true;
+                w.__ADC_PV_EVENT_ID = 'pv_' + Date.now() + '_' + Math.random().toString(36).slice(2, 9);
+                w.fbq('track', 'PageView', {
+                    content_name: d.title || w.location.hostname,
+                    content_category: w.location.hostname
+                }, { eventID: w.__ADC_PV_EVENT_ID });
+            }
+            function loadFbPixel() {
+                if (w.__ADC_FB_SCRIPT_LOADED) return;
+                w.__ADC_FB_SCRIPT_LOADED = true;
+                var s = d.createElement('script');
+                s.async = true;
+                s.src = 'https://connect.facebook.net/en_US/fbevents.js';
+                var f = d.getElementsByTagName('script')[0];
+                if (f && f.parentNode) f.parentNode.insertBefore(s, f);
+                else d.head.appendChild(s);
+            }
+            w.addEventListener('load', function() { setTimeout(loadFbPixel, 800); }, { once: true });
+            ['pointerdown', 'keydown', 'scroll', 'touchstart', 'mousemove'].forEach(function(ev) {
+                w.addEventListener(ev, loadFbPixel, { once: true, passive: true });
+            });
+        })(window, document);
+    </script>
+    <!-- End Meta Pixel Code -->
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF3PS4Z6"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=586278576865331&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- Navigation -->
 <nav class="sticky top-0 z-50 bg-white border-b border-slate-200">
     <div class="container mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
-            <a href="https://antidetect.gmbh" class="flex items-center space-x-3">
-                <img src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/logo/logo.png" alt="Antidetect Cloud" class="h-9 w-9" decoding="async">
+            <a href="https://antidetect.com.de" class="flex items-center space-x-3">
+                <img src="assets/images/logo/logo.png" alt="Antidetect Cloud" class="h-9 w-9" decoding="async">
                 <div>
                     <span class="text-xl font-bold text-slate-900">Antidetect</span>
                     <span class="text-xl font-bold text-blue-600">Cloud</span>
@@ -219,7 +277,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                          @click.away="open = false" 
                          x-cloak 
                          class="absolute right-0 mt-2 w-40 bg-white border border-slate-200 rounded-lg shadow-lg py-2 z-50">
-                        <a href="https://antidetect.gmbh" class="flex items-center justify-between px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50">
+                        <a href="https://antidetect.com.de" class="flex items-center justify-between px-4 py-2 text-sm font-bold text-blue-600 bg-blue-50">
                             Deutsch <i class="fas fa-check text-xs"></i>
                         </a>
                         <a href="https://antidetect.uk" class="flex items-center px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 transition">
@@ -232,7 +290,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                             English (AU)
                         </a>
                         <a href="https://antidetect.nz" class="flex items-center px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 transition">
-                            English (NZ)
+                            Te Reo Māori (NZ)
                         </a>
                         <a href="https://antidetect.ca" class="flex items-center px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 transition">
                             Français (CA)
@@ -268,14 +326,14 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
         <div class="max-w-4xl mx-auto text-center">
             <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur px-5 py-2 rounded-full text-cyan-300 text-sm font-medium mb-8">
                 <i class="fas fa-shield-alt"></i>
-                <span>Vertrauenswürdige Lösung für digitale Privatsphäre</span>
+                <span>Zuverlässige Lösung für den Schutz Ihrer digitalen Privatsphäre</span>
             </div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8">
                 Das komplette Ökosystem für<br>
                 <span class="text-cyan-400">digitale Identität</span>
             </h1>
             <p class="text-xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-                Verwalten Sie tausende Konten sicher und effizient. Unsere Cloud-basierte Architektur gewährleistet maximale Anonymität beim Skalieren Ihres Online-Geschäfts.
+                Verwalten Sie zahlreiche Konten sicher und effizient. Unsere cloudbasierte Architektur gewährleistet ein Höchstmaß an Anonymität bei der Skalierung Ihres Online-Geschäfts.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
                 <a href="https://antidetect.cloud" class="w-full sm:w-auto bg-white text-slate-900 px-10 py-4 rounded-lg font-bold hover:bg-slate-100 transition shadow-lg">
@@ -306,7 +364,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                 <div class="text-sm text-slate-500 mt-1">Aktive Nutzer</div>
             </div>
             <div>
-                <div class="text-3xl font-bold text-slate-900">99,9%</div>
+                <div class="text-3xl font-bold text-slate-900">99,9 %</div>
                 <div class="text-sm text-slate-500 mt-1">Verfügbarkeit</div>
             </div>
             <div>
@@ -314,7 +372,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                 <div class="text-sm text-slate-500 mt-1">Support</div>
             </div>
             <div>
-                <div class="text-3xl font-bold text-slate-900">100%</div>
+                <div class="text-3xl font-bold text-slate-900">100 %</div>
                 <div class="text-sm text-slate-500 mt-1">Cloud-basiert</div>
             </div>
         </div>
@@ -333,10 +391,10 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
             <!-- Browser Card -->
             <div class="bg-white rounded-2xl p-8 card-border">
                 <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
-                    <img src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/logo/logo-antidetect-browser.png" alt="Browser" class="w-8 h-8" loading="lazy" decoding="async">
+                    <img src="assets/images/logo/logo-antidetect-browser.png" alt="Browser" class="w-8 h-8" loading="lazy" decoding="async">
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Antidetect Browser</h3>
-                <p class="text-slate-600 mb-6">Erstellen Sie isolierte Browser-Profile mit fortschrittlichem Fingerprint-Spoofing. Basierend auf einer angepassten Firefox-Engine für Geschwindigkeit und Sicherheit.</p>
+                <p class="text-slate-600 mb-6">Erstellen Sie isolierte Browser-Profile mit fortschrittlichem Fingerprint-Spoofing. Auf Basis einer optimierten Firefox-Architektur für hohe Geschwindigkeit und Zuverlässigkeit.</p>
                 <ul class="space-y-3 mb-8 text-sm">
                     <li class="flex items-start">
                         <i class="fas fa-check text-blue-500 mr-3 mt-1"></i>
@@ -344,11 +402,11 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check text-blue-500 mr-3 mt-1"></i>
-                        <span class="text-slate-600">Canvas & WebGL Schutz</span>
+                        <span class="text-slate-600">Canvas- & WebGL-Schutz</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check text-blue-500 mr-3 mt-1"></i>
-                        <span class="text-slate-600">Besteht Pixelscan & IP-Hey Tests</span>
+                        <span class="text-slate-600">Besteht Pixelscan- & IP-Hey-Prüfungen</span>
                     </li>
                 </ul>
                 <a aria-label="Mehr erfahren über Antidetect Browser" href="https://browser.antidetect.cloud" class="inline-flex items-center font-bold text-blue-600 hover:text-blue-700">
@@ -358,14 +416,14 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
             <!-- Android Card -->
             <div class="bg-white rounded-2xl p-8 card-border">
                 <div class="bg-cyan-100 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
-                    <img src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/logo/logo-antidetect-android.png" alt="Android" class="w-8 h-8" loading="lazy" decoding="async">
+                    <img src="assets/images/logo/logo-antidetect-android.png" alt="Android" class="w-8 h-8" loading="lazy" decoding="async">
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Antidetect Android</h3>
-                <p class="text-slate-600 mb-6">Spoofing von Android-Geräteparametern und Emulator-Daten. Perfekt für Mobile Account Farming und App-Tests.</p>
+                <p class="text-slate-600 mb-6">Virtualisierung von Android-Geräteparametern und Emulator-Daten. Ideal für mobile Kontoverwaltung und App-Prüfungen.</p>
                 <ul class="space-y-3 mb-8 text-sm">
-                    <li class="flex items-start"><i class="fas fa-check text-cyan-500 mr-3 mt-1"></i><span class="text-slate-600">IMEI, Seriennummer & Android ID ändern</span></li>
-                    <li class="flex items-start"><i class="fas fa-check text-cyan-500 mr-3 mt-1"></i><span class="text-slate-600">GPS & Netzwerk-Details spoofing</span></li>
-                    <li class="flex items-start"><i class="fas fa-check text-cyan-500 mr-3 mt-1"></i><span class="text-slate-600">Massenregistrierung mobiler Apps</span></li>
+                    <li class="flex items-start"><i class="fas fa-check text-cyan-500 mr-3 mt-1"></i><span class="text-slate-600">IMEI, Seriennummer & Android-ID anpassen</span></li>
+                    <li class="flex items-start"><i class="fas fa-check text-cyan-500 mr-3 mt-1"></i><span class="text-slate-600">Standort- & Netzwerkdaten virtualisieren</span></li>
+                    <li class="flex items-start"><i class="fas fa-check text-cyan-500 mr-3 mt-1"></i><span class="text-slate-600">Automatisierte Verwaltung mobiler Apps</span></li>
                 </ul>
                 <a href="https://android.antidetect.cloud" class="inline-block w-full border border-cyan-200 text-cyan-700 text-center px-6 py-3 rounded-lg font-bold hover:bg-cyan-50 transition">Android entdecken</a>
             </div>
@@ -409,14 +467,14 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
             <!-- Machine Card -->
             <div class="bg-white rounded-2xl p-8 card-border">
                 <div class="bg-purple-100 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
-                    <img src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/logo/logo-antidetect-machine.png" alt="Machine" class="w-8 h-8" loading="lazy" decoding="async">
+                    <img src="assets/images/logo/logo-antidetect-machine.png" alt="Machine" class="w-8 h-8" loading="lazy" decoding="async">
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3">Antidetect Machine</h3>
-                <p class="text-slate-600 mb-6">Hardware-Level-Spoofing für PCs und virtuelle Maschinen. Ändern Sie CPU, GPU und Festplatten-Seriennummern mit einem Klick.</p>
+                <p class="text-slate-600 mb-6">Hardware-Virtualisierung für PCs und virtuelle Maschinen. Passen Sie CPU-, GPU- und Datenträger-Seriennummern mit einem Klick an.</p>
                 <ul class="space-y-3 mb-8 text-sm">
                     <li class="flex items-start">
                         <i class="fas fa-check text-purple-500 mr-3 mt-1"></i>
-                        <span class="text-slate-600">Motherboard & Festplatten-Seriennummern spoofing</span>
+                        <span class="text-slate-600">Mainboard- & Datenträger-Seriennummern anpassen</span>
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check text-purple-500 mr-3 mt-1"></i>
@@ -424,7 +482,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                     </li>
                     <li class="flex items-start">
                         <i class="fas fa-check text-purple-500 mr-3 mt-1"></i>
-                        <span class="text-slate-600">Ideal für E-Commerce-Verkäufer & Dropshipper</span>
+                        <span class="text-slate-600">Ideal für E-Commerce-Händler & Dropshipping</span>
                     </li>
                 </ul>
                 <a aria-label="Mehr erfahren über Antidetect Machine" href="https://machine.antidetect.cloud" class="inline-flex items-center font-bold text-blue-600 hover:text-blue-700">
@@ -449,8 +507,8 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                     <i class="fas fa-cloud text-white text-lg"></i>
                 </div>
                 <div>
-                    <h3 class="font-bold text-slate-900 text-lg mb-2">100% Cloud-Architektur</h3>
-                    <p class="text-slate-600">Greifen Sie von jedem Gerät auf Ihre Profile zu. Daten werden sofort in Ihrem gesamten Team synchronisiert.</p>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Vollständige Cloud-Architektur</h3>
+                    <p class="text-slate-600">Greifen Sie von jedem Gerät auf Ihre Profile zu. Ihre Daten werden in Echtzeit im gesamten Team synchronisiert.</p>
                 </div>
             </div>
 
@@ -459,8 +517,8 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                     <i class="fas fa-fingerprint text-white text-lg"></i>
                 </div>
                 <div>
-                    <h3 class="font-bold text-slate-900 text-lg mb-2">Elite-Spoofing</h3>
-                    <p class="text-slate-600">Umgehen Sie die fortschrittlichsten Tracking-Systeme mit pixelgenauer Hardware-Simulation.</p>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Präzises Hardware-Spoofing</h3>
+                    <p class="text-slate-600">Schützen Sie sich zuverlässig vor modernen Erkennungssystemen durch realitätsnahe Hardware-Simulation.</p>
                 </div>
             </div>
 
@@ -469,8 +527,8 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                     <i class="fas fa-users text-white text-lg"></i>
                 </div>
                 <div>
-                    <h3 class="font-bold text-slate-900 text-lg mb-2">Team-Zusammenarbeit</h3>
-                    <p class="text-slate-600">Teilen Sie Profile sicher und verwalten Sie Berechtigungen für großangelegte Operationen.</p>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Teamarbeit & Zugriffssteuerung</h3>
+                    <p class="text-slate-600">Geben Sie Profile sicher frei und verwalten Sie Zugriffsrechte für groß angelegte Arbeitsabläufe.</p>
                 </div>
             </div>
 
@@ -492,7 +550,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                      :class="activeSlide === 0 ? 'opacity-100 scale-100' : 'opacity-40 scale-90 blur-[2px]'"
                      @click="activeSlide = 0">
                     <div class="bg-slate-800 rounded-xl p-2 shadow-xl">
-                        <img src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/android/android-open.webp" alt="Android Antidetect" class="rounded-lg w-full" loading="lazy" decoding="async">
+                        <img src="assets/images/android/android-open.webp" alt="Android Antidetect" class="rounded-lg w-full" loading="lazy" decoding="async">
                     </div>
                 </div>
                 
@@ -501,7 +559,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                      :class="activeSlide === 1 ? 'opacity-100 scale-100' : 'opacity-40 scale-90 blur-[2px]'"
                      @click="activeSlide = 1">
                     <div class="bg-slate-900 rounded-2xl p-3 md:p-4 shadow-2xl">
-                        <img src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/browser/browser-open.webp" alt="Antidetect Browser Interface" class="rounded-xl w-full" loading="lazy" decoding="async">
+                        <img src="assets/images/browser/browser-open.webp" alt="Antidetect Browser Interface" class="rounded-xl w-full" loading="lazy" decoding="async">
                     </div>
                 </div>
                 
@@ -510,20 +568,20 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                      :class="activeSlide === 2 ? 'opacity-100 scale-100' : 'opacity-40 scale-90 blur-[2px]'"
                      @click="activeSlide = 2">
                     <div class="bg-slate-800 rounded-xl p-2 shadow-xl">
-                        <img src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/machine/create-profile-hardware.webp" alt="Antidetect Machine Interface" class="rounded-lg w-full" loading="lazy" decoding="async">
+                        <img src="assets/images/machine/create-profile-hardware.webp" alt="Antidetect Machine Interface" class="rounded-lg w-full" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
             
             <!-- Slide Indicators -->
             <div class="flex justify-center gap-3 mt-6">
-                <button aria-label="Folie 1" @click="activeSlide = 0" 
+                <button aria-label="Ansicht 1" @click="activeSlide = 0" 
                         class="w-2.5 h-2.5 rounded-full transition-all duration-300"
                         :class="activeSlide === 0 ? 'bg-cyan-500 w-8' : 'bg-slate-400 hover:bg-slate-300'"></button>
-                <button aria-label="Folie 2" @click="activeSlide = 1" 
+                <button aria-label="Ansicht 2" @click="activeSlide = 1" 
                         class="w-2.5 h-2.5 rounded-full transition-all duration-300"
                         :class="activeSlide === 1 ? 'bg-cyan-500 w-8' : 'bg-slate-400 hover:bg-slate-300'"></button>
-                <button aria-label="Folie 3" @click="activeSlide = 2" 
+                <button aria-label="Ansicht 3" @click="activeSlide = 2" 
                         class="w-2.5 h-2.5 rounded-full transition-all duration-300"
                         :class="activeSlide === 2 ? 'bg-cyan-500 w-8' : 'bg-slate-400 hover:bg-slate-300'"></button>
             </div>
@@ -545,11 +603,11 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                 <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6">
                     <i class="fas fa-chart-line text-blue-400 text-xl"></i>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-3">Affiliate & MMO</h3>
-                <p class="text-slate-400 mb-6">Meistern Sie Dropshipping, NFT-Gaming, Airdrops und Multi-Account-Farming mit Leichtigkeit.</p>
+                <h3 class="text-xl font-bold text-white mb-3">Affiliate-Marketing & E-Commerce</h3>
+                <p class="text-slate-400 mb-6">Meistern Sie Dropshipping, E-Commerce und skalierbare Multi-Account-Arbeitsabläufe mit Leichtigkeit.</p>
                 <div class="flex flex-wrap gap-2">
                     <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1.5 rounded-full font-semibold">Dropshipping</span>
-                    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1.5 rounded-full font-semibold">Krypto</span>
+                    <span class="bg-blue-500/20 text-blue-400 text-xs px-3 py-1.5 rounded-full font-semibold">Affiliate</span>
                 </div>
             </div>
 
@@ -580,7 +638,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 
         <div class="mt-20 max-w-4xl mx-auto text-center border-t border-slate-700 pt-16">
             <blockquote class="text-xl md:text-2xl text-slate-300 italic leading-relaxed">
-                „Antidetect Cloud ist nicht nur ein Browser – es ist ein umfassendes Ökosystem, das Ihnen ermöglicht, anonym zu arbeiten und die volle Kontrolle über Ihre digitale Identität zu übernehmen."
+                „Antidetect Cloud ist weit mehr als ein Browser – es ist ein umfassendes Ökosystem, mit dem Sie anonym arbeiten und die volle Kontrolle über Ihre digitale Identität behalten.“
             </blockquote>
         </div>
     </div>
@@ -615,7 +673,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                         <ul class="space-y-3 mb-8 text-sm">
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">200 lokale Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">100 Cloud-Profile</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Tools für Workflow-Automatisierung</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Werkzeuge zur Workflow-Automatisierung</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Ticket-Support</span></li>
                         </ul>
                         <a href="https://marketplace.antidetect.cloud/software/antidetect-browser" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
@@ -635,7 +693,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                             <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">500 lokale Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">250 Cloud-Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">2 Mitglieder</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">Tools für Workflow-Automatisierung</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">Werkzeuge zur Workflow-Automatisierung</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-cyan-400 mr-3 mt-1"></i><span class="text-slate-300">Ticket-Support</span></li>
                         </ul>
                         <a href="https://marketplace.antidetect.cloud/software/antidetect-browser" class="block text-center py-3 bg-white text-slate-900 rounded-lg font-bold hover:bg-slate-100 transition">Jetzt kaufen</a>
@@ -650,11 +708,11 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                             <span class="text-slate-500" x-text="cycle === 'monthly' ? '/Monat' : cycle === 'biannual' ? '/6 Monate' : '/Jahr'">/Monat</span>
                         </div>
                         <ul class="space-y-3 mb-8 text-sm">
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">1000 lokale Profile</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">1.000 lokale Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">500 Cloud-Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">5 Mitglieder</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Tools für Workflow-Automatisierung</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Priorisierter und vielseitiger Support</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Werkzeuge zur Workflow-Automatisierung</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Priorisierter Multi-Channel-Support</span></li>
                         </ul>
                         <a href="https://marketplace.antidetect.cloud/software/antidetect-browser" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
                 </div>
@@ -668,17 +726,17 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                         </div>
                         <ul class="space-y-3 mb-8 text-sm">
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Unbegrenzte lokale Profile</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">1000 Cloud-Profile</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">1.000 Cloud-Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">10 Mitglieder</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Tools für Workflow-Automatisierung</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Priorisierter und vielseitiger Support</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Werkzeuge zur Workflow-Automatisierung</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Priorisierter Multi-Channel-Support</span></li>
                         </ul>
                         <a href="https://marketplace.antidetect.cloud/software/antidetect-browser" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 card-border">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Perpetual</h3>
-                        <p class="text-slate-500 text-sm mb-4">Einmaliger Kaufplan</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Perpetual (Dauerlizenz)</h3>
+                        <p class="text-slate-500 text-sm mb-4">Einmalige Zahlung</p>
                         <div class="mb-6">
                             <span class="text-4xl font-bold text-slate-900 ">$300</span>
                             <span class="text-slate-500">/einmalig</span>
@@ -687,15 +745,15 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Unbegrenzte lokale Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">20 Cloud-Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">2 Mitglieder</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Tools für Workflow-Automatisierung</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Priorisierter und vielseitiger Support</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Werkzeuge zur Workflow-Automatisierung</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Priorisierter Multi-Channel-Support</span></li>
                         </ul>
                         <a href="https://marketplace.antidetect.cloud/software/antidetect-browser" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 card-border">
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Lifetime</h3>
-                        <p class="text-slate-500 text-sm mb-4">Einmaliger Kauf für Teams</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Lifetime (Teams)</h3>
+                        <p class="text-slate-500 text-sm mb-4">Einmalige Zahlung für Teams</p>
                         <div class="mb-6">
                             <span class="text-4xl font-bold text-slate-900 ">$1000</span>
                             <span class="text-slate-500">/einmalig</span>
@@ -704,8 +762,8 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Unbegrenzte lokale Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">500 Cloud-Profile</span></li>
                             <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">10 Mitglieder</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Tools für Workflow-Automatisierung</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Priorisierter und vielseitiger Support</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Werkzeuge zur Workflow-Automatisierung</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-blue-500 mr-3 mt-1"></i><span class="text-slate-600">Priorisierter Multi-Channel-Support</span></li>
                         </ul>
                         <a href="https://marketplace.antidetect.cloud/software/antidetect-browser" class="block text-center py-3 border-2 border-slate-200 rounded-lg font-bold text-slate-700 hover:border-blue-600 hover:text-blue-600 transition">Jetzt kaufen</a>
                 </div>
@@ -733,7 +791,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 
                 <div class="border border-slate-200 rounded-xl overflow-hidden">
                     <button @click="active = active === 2 ? 0 : 2" class="w-full px-6 py-5 text-left font-semibold flex justify-between items-center hover:bg-slate-50 transition">
-                        <span>Kann ich die Software vor dem Kauf testen?</span>
+                        <span>Kann ich die Software kostenlos testen?</span>
                         <i class="fas fa-chevron-down text-slate-400 transition" :class="active === 2 ? 'rotate-180' : ''"></i>
                     </button>
                     <div x-show="active === 2" x-collapse x-cloak class="px-6 pb-5 text-slate-600 leading-relaxed">
@@ -753,11 +811,11 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 
                 <div class="border border-slate-200 rounded-xl overflow-hidden">
                     <button @click="active = active === 4 ? 0 : 4" class="w-full px-6 py-5 text-left font-semibold flex justify-between items-center hover:bg-slate-50 transition">
-                        <span>Bieten Sie Support auf Deutsch an?</span>
+                        <span>Bieten Sie Support in deutscher Sprache an?</span>
                         <i class="fas fa-chevron-down text-slate-400 transition" :class="active === 4 ? 'rotate-180' : ''"></i>
                     </button>
                     <div x-show="active === 4" x-collapse x-cloak class="px-6 pb-5 text-slate-600 leading-relaxed">
-                        Ja, unser Support-Team steht Ihnen rund um die Uhr zur Verfügung, auch auf Deutsch. Wir verstehen die Anforderungen des deutschen Marktes und bieten entsprechend zugeschnittene Unterstützung.
+                        Ja, unser Support-Team steht Ihnen rund um die Uhr zur Verfügung – selbstverständlich auch auf Deutsch. Wir kennen die hohen Anforderungen im deutschsprachigen Raum und bieten entsprechende Unterstützung.
                     </div>
                 </div>
             </div>
@@ -797,13 +855,13 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
     </div>
     <div class="vifox-mobile-card">
       <div class="vifox-app-lockup">
-        <img src="https://antidetectcloud.b-cdn.net/vifox-antidetect-cloud/assets/brand/vifox-app-icon.png?v=b4001b866a88" alt="Vifox Mobile app icon" width="74" height="74" loading="lazy" decoding="async">
+        <img src="https://antidetectcloud.b-cdn.net/vifox-antidetect-cloud/assets/brand/vifox-app-icon.png?v=b4001b866a88" alt="Vifox Mobile App-Symbol" width="74" height="74" loading="lazy" decoding="async">
         <div><strong>Vifox Mobile</strong><span>Mobiler Browser mit Profilen</span></div>
       </div>
       <ul class="vifox-feature-list">
         <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Isoliert Profile, Cookies, Sessions und Browserverlauf.</span></li>
-        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Unterstützt Proxy-Hilfe, persistente Tabs und mobile Umgebungseinstellungen.</span></li>
-        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Passt in das Antidetect Cloud-Ökosystem für Desktop, Android und iOS.</span></li>
+        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Unterstützt Proxy-Konfiguration, persistente Tabs und mobile Umgebungseinstellungen.</span></li>
+        <li><i class="fas fa-check-circle" aria-hidden="true"></i><span>Fügt sich nahtlos in das Antidetect Cloud-Ökosystem für Desktop, Android und iOS ein.</span></li>
       </ul>
     </div>
   </div>
@@ -829,7 +887,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
     </div>
     <div class="vitemail-promo__features">
       <div><h3>Gemeinsamer Posteingang</h3><p>Lesen Sie Nachrichten aller Konten oder eines einzelnen Postfachs.</p></div>
-      <div><h3>Microsoft und temporäre E-Mails</h3><p>Verwalten Sie Outlook und Hotmail und erstellen Sie temporäre Adressen.</p></div>
+      <div><h3>Microsoft und temporäre E-Mails</h3><p>Verwalten Sie Outlook- und Hotmail-Konten und erstellen Sie temporäre E-Mail-Adressen.</p></div>
       <div><h3>Für Mobilgeräte entwickelt</h3><p>Eine native App mit hellem und dunklem Design.</p></div>
     </div>
   </div>
@@ -837,7 +895,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 
 
 <!-- ==================== ADVERTISING & PARTNERSHIP SECTION ==================== -->
-<section id="advertising" class="adc-ads-section" aria-label="PARTNERSCHAFT & WERBUNG">
+<section id="advertising" class="adc-ads-section" aria-label="Partnerschaft und Werbung">
   <style>
     .adc-ads-section {
       background: radial-gradient(120% 120% at 50% 0%, #172554 0%, #0b0f19 50%, #030712 100%);
@@ -1145,7 +1203,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
         <div class="adc-ads-card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
         </div>
-        <div class="adc-ads-card-stat">20M+</div>
+        <div class="adc-ads-card-stat">20 Mio.+</div>
         <h3 class="adc-ads-card-title">Monatlicher Traffic</h3>
         <p class="adc-ads-card-desc">Über 20 Millionen monatliche Besuche von aktiven Nutzern, die täglich auf den Websites von Antidetect Cloud und in Vifox Mobile arbeiten.</p>
       </div>
@@ -1185,9 +1243,9 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
     <div class="adc-ads-cta-box">
       <div class="adc-ads-cta-content">
         <h3 class="adc-ads-cta-title">Bereit für messbares Wachstum und neue Kunden?</h3>
-        <p class="adc-ads-cta-desc">Flexible Sponsoring-Pakete, native Integrationen und erstklassige Konversionsraten. Kontaktieren Sie unser Commercial-Team noch heute.</p>
+        <p class="adc-ads-cta-desc">Flexible Sponsoring-Pakete, native Integrationen und hohe Konversionsraten. Kontaktieren Sie unser Vertriebsteam noch heute.</p>
         <div class="adc-ads-email-badge">
-          <span>Direktkontakt für Werbetreibende:</span>
+          <span>Direktkontakt für Werbekunden:</span>
           <a class="adc-ads-email-link" href="mailto:contact@antidetect.cloud?subject=Werbeanfrage%20-%20Antidetect%20Cloud%20%26%20Vifox%20Mobile">contact@antidetect.cloud</a>
         </div>
       </div>
@@ -1196,7 +1254,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
           <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           <span>Werbeplatz anfragen</span>
         </a>
-        <p class="adc-ads-subnote">Antwort innerhalb von 24 Geschäftsstunden</p>
+        <p class="adc-ads-subnote">Antwort innerhalb von 24 Werktagsstunden</p>
       </div>
     </div>
   </div>
@@ -1209,7 +1267,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div class="col-span-1">
                 <div class="flex items-center space-x-3 mb-6">
-                    <img src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/images/logo/logo.png" alt="Logo" class="h-9 w-9" loading="lazy" decoding="async">
+                    <img src="assets/images/logo/logo.png" alt="Antidetect Cloud Logo" class="h-9 w-9" loading="lazy" decoding="async">
                     <div>
                         <span class="text-xl font-bold">Antidetect</span>
                         <span class="text-xl font-bold text-blue-400">Cloud</span>
@@ -1218,7 +1276,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                 <p class="text-slate-400 text-sm leading-relaxed mb-6">
                     Das weltweit führende Ökosystem für digitales Identitätsmanagement und Multi-Accounting-Privatsphäre.
                 </p>
-                <div class="landing-operator"><p><strong>Betreiber:</strong> Antidetect Cloud., Ltd</p><address><strong>Hauptsitz:</strong> 601 W Lockeford St, Lodi, CA, 95240 United States</address><p><strong>Email:</strong> <a href="mailto:contact@antidetect.cloud" class="hover:text-blue-400 transition">contact@antidetect.cloud</a></p></div>
+                <div class="landing-operator"><p><strong>Betreiber:</strong> Antidetect Cloud., Ltd</p><address><strong>Hauptsitz:</strong> 601 W Lockeford St, Lodi, CA, 95240 United States</address><p><strong>E-Mail:</strong> <a href="mailto:contact@antidetect.cloud" class="hover:text-blue-400 transition">contact@antidetect.cloud</a></p></div>
                 <div class="flex flex-wrap gap-4 text-slate-400 text-lg">
                     <a aria-label="Facebook" href="https://facebook.com/antidetectcloud" class="hover:text-blue-400 transition"><i class="fab fa-facebook"></i></a>
                     <a aria-label="Discord" href="https://discord.gg/KhUQZmf8h5" class="hover:text-blue-400 transition"><i class="fab fa-discord"></i></a>
@@ -1226,7 +1284,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                     <a aria-label="VK" href="https://vk.com/antidetectsoftware" class="hover:text-blue-400 transition"><i class="fab fa-vk"></i></a>
                     <a aria-label="WhatsApp" href="https://whatsapp.com/channel/0029VbBv5gYG3R3qXf8JZt2J" class="hover:text-blue-400 transition"><i class="fab fa-whatsapp"></i></a>
                     <a aria-label="Instagram" href="https://www.instagram.com/antidetectcloud" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
-                    <a aria-label="Twitter" href="https://x.com/antidetect_us" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                    <a aria-label="X (Twitter)" href="https://x.com/antidetect_us" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
             <div>
@@ -1244,7 +1302,7 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
                 <h3 class="font-bold mb-6 text-white uppercase text-xs tracking-widest">Ressourcen</h3>
                 <ul class="space-y-4 text-sm text-slate-400">
                     <li><a href="https://blog.antidetect.cloud" class="hover:text-blue-400 transition">Blog</a></li>
-                    <li><a href="https://threads.antidetect.cloud" class="hover:text-blue-400 transition">Social</a></li>
+                    <li><a href="https://threads.antidetect.cloud" class="hover:text-blue-400 transition">Community</a></li>
                     <li><a href="https://marketplace.antidetect.cloud/software" class="hover:text-blue-400 transition">Software</a></li>
                     <li><a href="https://marketplace.antidetect.cloud/resources" class="hover:text-blue-400 transition">Shop</a></li>
                 </ul>
@@ -1284,6 +1342,6 @@ footer a:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-<script src="https://antidetectcloud.b-cdn.net/antidetect-gmbh/assets/js/main.js"></script>
+<script src="assets/js/main.js?v=20261125"></script>
 </body>
 </html>
